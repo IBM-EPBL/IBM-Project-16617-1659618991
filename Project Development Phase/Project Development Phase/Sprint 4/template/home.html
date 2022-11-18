@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initaial-scale=1.0">
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+nav{
+	width: 100%;
+	height: 75px;
+	background-color: #B71EE5;
+	line-height: 75px;
+	padding:0px 100px;
+	position:fixed;
+	z-index: 1;
+}
+nav .logo{
+	font-size: 40px;
+	font-weight: bold;
+	letter-spacing: 1.5px; 
+}
+nav .logo p{
+	float: left;
+	color:#FFFFFF;
+	text-transform: uppercase;
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li a{
+	color:#0BFAD9;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	padding:0px 32px;
+}
+nav ul li a:hover{
+	color:#FFFFFF;
+}
+nav ul li .active{
+	color:#0BFAD9;
+}
+.image img{
+	width: 100%;
+	height: 0px auto;
+}
+</style>
+	<nav>
+		<div class="logo">
+			<p>WELCOME TO JOB HUNT</p>
+		</div>
+		<ul>
+			<li><a href="" class="active">home</a></li>
+			<li><a href="/signup">Signup</a></li>
+			<li><a href="/signin">Signin</a></li>
+			<li><a href="/about1">About us</a></li>
+			
+		</ul>
+	</nav>
+	<div class="image">
+		<img src="https://thumbs.dreamstime.com/b/cubes-word-job-cubes-word-job-paragraph-symbol-newspaper-100716838.jpg" 
+             style="height:750px;width:1550px;">
+		
+		
+	</div>
+	<script>
+   window.watsonAssistantChatOptions = {
+              integrationID: "65c01ed6-9fc1-4883-979a-3676279ebe44", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "8fcd017f-a192-420a-aafc-18cb0330efca", // The ID of your service instance.
+              onLoad: function(instance) { instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+</script>
+
+</body>
+</html>
